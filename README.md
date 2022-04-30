@@ -1,2 +1,2 @@
 # Barrera_Anel
-Laboratorios Desarrollo de Software IX
+Laboratorios Desarrollo de Software IX.
