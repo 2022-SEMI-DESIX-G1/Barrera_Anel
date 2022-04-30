@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio #5(Fibonacci)</title>
+</head>
+<body>
+    <section>
+        <form id="fibonacci">
+            <h1>Serie Fibonacci</h1>
+            <label for="size">Cantidad de Números:</label>
+            <input id="size" type="text">
+            <button type="submit">Calcular</button>
+        </form>
+    </section>
+    <section>
+        <div id="response"></div>
+    </section>
+    <script src="utils.js"></script>
+    <script src="index.js"></script>
+    <style>
+        #response {
+            display:flex;
+            flex-direction:row;
+            flex-wrap:wrap;
+            
+        }
+
+        .card {
+            padding: 1rem;
+            border: 2px solid grey;
+            margin: 1rem;
+            background-color: coral;
+        }
+    </style>
+</body>
+</html>
