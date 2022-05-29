@@ -11,4 +11,4 @@ const main = async (n) => {
  
 } ;
 
-main(5);
+main(10);
