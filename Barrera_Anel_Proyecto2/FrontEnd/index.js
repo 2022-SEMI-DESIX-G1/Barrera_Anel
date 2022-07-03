@@ -15,11 +15,16 @@
         pokemonSprites: document.querySelector("#pokemon-sprites"),
         pokemonLocation: document.querySelector("#pokemon-location"),
         pokemonEvolution: document.querySelector("#pokemon-evolution"),
+        pokemonClean: document.querySelector("#clean"),
       },
       init: () => {
         App.htmlElements.form.addEventListener(
           "submit",
           App.handlers.handleFormSubmit
+        );
+        App.htmlElements.form.addEventListener(
+          "reset",
+          App.handlers.pokemonFinderFormOnClean
         );
       },
       handlers: {
@@ -131,6 +136,20 @@
           App.htmlElements.pokemonLocation.style.display = "none";
         }     
 
+        },
+        pokemonFinderFormOnClean: async (e) => {
+          e.preventDefault();
+          App.htmlElements.pokemonInformation.style.display = "none";
+          App.htmlElements.pokemonLocation.style.display = "none";
+          App.htmlElements.pokemonEvolution.style.display = "none";
+          App.htmlElements.pokemonSprites.style.display = "none";
+          App.htmlElements.pokemonInformation.value = "";
+          App.htmlElements.pokemonLocation.value = "";
+          App.htmlElements.pokemonEvolution.value = "";
+          App.htmlElements.pokemonSprites.value = "";
+          App.htmlElements.cb1.checked = false;   
+          App.htmlElements.cb2.checked = false;   
+          App.htmlElements.cb3.checked = false;   
         },
       },
       utils: {
