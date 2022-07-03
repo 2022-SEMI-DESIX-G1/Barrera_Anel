@@ -39,7 +39,7 @@
          // console.log(responsedata);
           var response;
           const searchType ="pokemon";
-          
+          console.log(responsedata);
           response = responsedata.data;
           console.log(response);
           if (response == 'InvalidPokemon'){
@@ -146,9 +146,9 @@
       },
       templates: {
         render: ({ searchType, response }) => {
-          console.log("aqui");
-          console.log (response);         
-          console.log(response.sprites.other["official-artwork"].front_default);
+         // console.log("aqui");
+         // console.log (response);         
+         // console.log(response.sprites.other["official-artwork"].front_default);
           const renderMap = {            
             pokemon: App.templates.pokemonCard,
           };
